@@ -1,0 +1,54 @@
+button {
+  border-radius: 8px !important;
+}
+
+button:disabled {
+  opacity: 0.1;
+  background-color: gray !important;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+select,
+input:not([type="radio"]),
+textarea {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px !important;
+  height: 40px;
+}
+
+input[type="radio"] {
+  width: 20px !important;
+}
+
+textarea {
+  height: unset;
+}
+
+.radius {
+  border-radius: 8px !important;
+}
+
+.color-red {
+  color: red;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 400px;
+}
+
+input:read-only,
+textarea:read-only {
+  background-color: transparent !important;
+  color: #fff;
+  padding: 0;
+  outline: none !important;
+}

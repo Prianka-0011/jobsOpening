@@ -1,0 +1,17 @@
+<div class="header">
+  <div>
+    <button routerLink="/">Home</button>
+    <button routerLink="/jobs">Jobs</button>
+    <button routerLink="/search">Search</button>
+    <button routerLink="/add-job"
+      *ngIf="isLoggedIn">Add Job</button>
+  </div>
+  <div>
+    <button routerLink="/profile"
+      *ngIf="isLoggedIn">Profile</button>
+    <button (click)="logOut()"
+      *ngIf="isLoggedIn">Log Out</button>    
+    <button routerLink="/login"
+      *ngIf="!isLoggedIn">Log In</button>    
+  </div>
+</div>
